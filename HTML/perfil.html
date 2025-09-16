@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Fútbol fantasía</title>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/PERFIL/perfil.css">
+    <link rel="stylesheet" href="../CSS/PERFIL/logros.css">
+    <link rel="stylesheet" href="../CSS/PERFIL/popUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="contenedor-navbar">
+            <ul class="navbar-list">
+                <li class="logo"><a href="../index.html"><img src="../IMAGENES/logo.png" alt="Logo"></a></li>
+                <li class="busqueda">
+                    <input type="text" placeholder="Buscar">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+                <li><a href="../index.html" class="alternative">Inicio</a></li>
+                <li><a href="#" class="alternative">Torneos</a></li>
+                <li><a href="#" class="alternative">Chats</a></li>
+                <li><a href="login.html" class="alternative">Iniciar sesión</a></li>
+                <!-- BOTON TEMPORAL DE PERFIL -->
+                <li><a href="#" class="alternative">Perfil</a></li>
+                <li class="menu-hamburguesa">
+                    <button id="hamburger-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="perfil">
+            <div class="perfil-container">
+                <div class="banner-container">
+                    <div class="imagen-perfil">
+                        <img src="../IMAGENES/silkson.jpg" alt="Perfil">
+                    </div>
+                    <div class="nombreUsuario">
+                        <h1>@FutbolFantasiaFan</h1>
+                    </div>
+                    <button class="boton-recompensas" id="personalizacion"><i class="fa-solid fa-pen"></i></button>
+                </div>
+                <div class="opciones-container">
+                    <div class="opciones-botones">
+                        <button class="boton-opcion activo" data-target="info">Información del perfil</button>
+                        <button class="boton-opcion" data-target="logros">Logros</button>
+                    </div>
+                </div>
+                <div class="infoPerfil-container activo" id="info">
+                    <div class="infoPerfil-content">
+                        <p>Nombre: <label for="nombre">Carlos</label></p>
+                        <p>Apellido: <label for="apellido">González</label></p>
+                        <p>Email: <label for="email">carlos.gonzalez@email.com</label></p>
+                        <p>Contraseña: <label for="password">••••••••</label></p>
+                        <p>Género: <label for="genero">Masculino</label></p>
+                        <p>Cumpleaños: <label for="cumpleaños">15/08/1990</label></p>
+                        <p>Nación seleccionada: <label for="pais">Argentina</label></p>
+                        <p>Logros completados: <label for="logrosCompletados">5 de 12</label></p>
+                    </div>
+                    <button class="boton-editar">Editar perfil</button>
+                    <button class="boton-cerrarSesion">Cerrar sesión</button>
+                </div>
+                <div class="logros-container" id="logros">
+                    <div class="logros-content">
+                        <h2>Logros</h2>
+                        <p>Total de logros: <label for="logrosCompletados">5 de 12</label></p>
+                        <div class="logros-grid">
+                            <!-- TARJETAS DE LOS LOGROS-->
+                            <div class="logros-tarjeta">
+                                <div class="logros-texto">
+                                    <h3>Primer Partido</h3>
+                                    <p>Completa tu primer partido en Fútbol Fantasía</p>
+                                </div>
+                                <div class="logros-imagen">
+                                    <img src="https://i.pinimg.com/736x/53/25/47/532547c1e4f7c9fb773f6b00d252ad11.jpg" alt="Logro 1">
+                                </div>
+                            </div>
+                            <div class="logros-tarjeta sinCompletar">
+                                <div class="logros-texto">
+                                    <h3>¿Nuevo por aquí?</h3>
+                                    <p>Crea y participa en tu primer torneo</p>
+                                </div>
+                                <div class="logros-imagen">
+                                    <img src="../IMAGENES/logro-1.jpg" alt="Logro 2">
+                                </div>
+                            </div>
+                            <div class="logros-tarjeta sinCompletar">
+                                <div class="logros-texto">
+                                    <h3>Apasionado por el fútbol</h3>
+                                    <p>Juega un total de 10 torneos</p>
+                                </div>
+                                <div class="logros-imagen">
+                                    <img src="../IMAGENES/logro-1.jpg" alt="Logro 3">
+                                </div>
+                            </div>
+                            <div class="logros-tarjeta sinCompletar">
+                                <div class="logros-texto">
+                                    <h3>Goleador</h3>
+                                    <p>Anota 10 goles en una temporada</p>
+                                </div>
+                                <div class="logros-imagen">
+                                    <img src="../IMAGENES/logro-1.jpg" alt="Logro 4">
+                                </div>
+                            </div>
+                            <div class="logros-tarjeta">
+                                <div class="logros-texto">
+                                    <h3>Invicto</h3>
+                                    <p>Permanece 3 partidos consecutivos sin perder</p>
+                                </div>
+                                <div class="logros-imagen">
+                                    <img src="../IMAGENES/logro-1.jpg" alt="Logro 5">
+                                </div>
+                            </div>
+                            <div class="logros-tarjeta">
+                                <div class="logros-texto">
+                                    <h3>Leyenda</h3>
+                                    <p>Alcanza el nivel máximo en el juego</p>
+                                </div>
+                                <div class="logros-imagen">
+                                    <img src="../IMAGENES/logro-1.jpg" alt="Logro 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal-personalizacion">
+    <div class="modal-contenido">
+        <button class="modal-cerrar"><i class="fas fa-times"></i></button>
+        
+        <div class="menu-personalizacion">
+            <button class="boton-menu-personalizacion activo" id="botonBanner">Banner</button>
+            <button class="boton-menu-personalizacion" id="botonRecompensas">Recompensas</button>
+        </div>
+        
+        <!-- Contenido para personalización de banner -->
+        <div class="banner-personalizacion contenido-personalizacion activo">
+            <h3>Personalizar banner de perfil</h3>
+            
+            <div class="previsualizacion-banner">
+                <!-- Aquí se mostrará la previsualización del banner -->
+            </div>
+            
+            <div class="input-banner">
+                <div class="input-container">
+                    <i class="fa-solid fa-camera"></i>
+                    <input type="file" name="fotoBanner" id="bannerInput" accept="image/png, image/jpeg" class="foto-banner-input">
+                </div>
+            </div>
+            
+            <div class="botones-accion">
+    
+                <button class="boton-confirmar">Confirmar cambios</button>
+            </div>
+        </div>
+        
+        <!-- Contenido para personalización de recompensas -->
+        <div class="recompensas-personalizacion contenido-personalizacion">
+            <h3>Mis recompensas</h3>
+            
+            <div class="recompensas-grid">
+                <!-- Recompensa 1 -->
+                <div class="recompensa-tarjeta desbloqueada">
+                    <button class="recompensa-boton">
+                        <div class="recompensa-imagen">
+                            <img src="https://i.pinimg.com/736x/53/25/47/532547c1e4f7c9fb773f6b00d252ad11.jpg" alt="Marco dorado">
+                        </div>
+                        <div class="recompensa-texto">
+                            <h4>Marco dorado</h4>
+                            <p>Desbloqueado por completar 10 partidos</p>
+                            <span class="recompensa-estado">Desbloqueado</span>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Recompensa 2 -->
+                <div class="recompensa-tarjeta">
+                    <button class="recompensa-boton">
+                        <div class="recompensa-imagen">
+                            <img src="https://i.pinimg.com/736x/53/25/47/532547c1e4f7c9fb773f6b00d252ad11.jpg" alt="Banner especial">
+                        </div>
+                        <div class="recompensa-texto">
+                            <h4>Banner especial</h4>
+                            <p>Desbloqueado al alcanzar el nivel 5</p>
+                            <span class="recompensa-estado">Bloqueado</span>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Recompensa 3 -->
+                <div class="recompensa-tarjeta desbloqueada">
+                    <button class="recompensa-boton">
+                        <div class="recompensa-imagen">
+                            <img src="https://i.pinimg.com/736x/53/25/47/532547c1e4f7c9fb773f6b00d252ad11.jpg" alt="Icono de leyenda">
+                        </div>
+                        <div class="recompensa-texto">
+                            <h4>Icono de leyenda</h4>
+                            <p>Desbloqueado por ganar un torneo</p>
+                            <span class="recompensa-estado">Desbloqueado</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+    <div class="contenedor-footer">
+        <div class="footer-seccion">
+            <h3>Contáctanos</h3>
+            <p><i class="fas fa-envelope"></i> Email: info@fcfm.mx</p>
+            <p><i class="fas fa-phone"></i> Teléfono: +52 (0) 991 123 4567</p>
+            <p><i class="fas fa-map-marker-alt"></i> Dirección: Av. de las Américas, s/n, Col. Centro, Monterrey, Nuevo León, México</p>
+        </div>
+        <div class="footer-seccion">
+            <h3>Redes Sociales</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-seccion">
+            <h3>Acerca de nosotros</h3>
+            <p>Proyecto enfocado para simular el fútbol fantasí de la vida real con la temática del Mundial de Fútbol.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Fútbol fantasía. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+    <script src="../JS/hamburguesa.js"></script>
+    <script src="../JS/PERFIL/perfil.js"></script>
+    <script src="../JS/PERFIL/popUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

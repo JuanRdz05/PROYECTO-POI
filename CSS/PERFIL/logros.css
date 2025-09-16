@@ -1,0 +1,9 @@
+.sinCompletar
+{
+    filter: brightness(0.7);
+}
+
+.completado
+{
+    filter: brightness(1);
+}
